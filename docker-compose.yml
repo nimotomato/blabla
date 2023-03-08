@@ -4,10 +4,10 @@ services:
     restart: always
     build:
       dockerfile: Dockerfile
-      context: ./api
+      context: ./api-level2
     volumes:
     - /app/node_modules
-    - ./api:/app
+    - ./api-level2:/app
     ports:
       - '3000:3000'
   nginx:
